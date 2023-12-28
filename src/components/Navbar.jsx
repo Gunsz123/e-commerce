@@ -4,7 +4,7 @@ import { GrCart } from "react-icons/gr";
 
 const Navbar = () => {
   return (
-    <div className="flex bg-[#262626] text-white text-xl p-5 justify-center space-x-[400px] font-semibold ">
+    <div className="flex bg-[#262626] text-white text-xl p-5 justify-center space-x-[400px] font-semibold sm:space-x-[100px]">
       <Link to="/" className="hover:text-amber-400">
         Home
       </Link>

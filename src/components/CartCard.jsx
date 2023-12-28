@@ -10,7 +10,7 @@ const CartCard = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="ml-[10%] mt-5 max-w-[1500px] border border-black rounded-xl p-5 shadow-inner">
+    <div className="ml-[10%] mt-5 max-w-[1500px] border border-black rounded-xl p-5 shadow-inner sm:mr-5">
       <div>
         <h1 className="text-black font-bold text-5xl flex justify-center mt-2 mb-2 ">Your Items</h1>
       </div>
@@ -28,7 +28,7 @@ const CartCard = () => {
             onClick={() => navigate("/products")}
             className="border border-solid border-black px-5
            py-2 rounded-xl bg-black text-white hover:bg-amber-400 hover:text-black transition-transform duration-100 mt-5 mr-[80%]
-            hover:scale-[0.9]">
+            hover:scale-[0.9] sm:mb-3">
             Continue
           </button>
           <button
