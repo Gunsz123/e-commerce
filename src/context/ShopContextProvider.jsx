@@ -22,14 +22,7 @@ const ShopContextProvider = (props) => {
   };
 
   const removeItem = (itemId) => {
-    const updatedCartItems = Object.entries(cartItems)
-      .filter(([key, value]) => key !== String(itemId))
-      .reduce((acc, [key, value]) => {
-        acc[key] = value;
-        return acc;
-      }, {});
-
-    setCartItems(updatedCartItems);
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - prev[itemId] }));
   };
 
   const getTotalCartAmount = () => {

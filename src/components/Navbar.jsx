@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GrCart } from "react-icons/gr";
 
 const Navbar = () => {
   return (
@@ -10,8 +11,9 @@ const Navbar = () => {
       <Link to="/products" className="hover:text-amber-400">
         Products
       </Link>
-      <Link to="/cart" className="hover:text-amber-400">
+      <Link to="/cart" className="hover:text-amber-400 flex items-center">
         Cart
+        <GrCart className="ml-5" />
       </Link>
     </div>
   );

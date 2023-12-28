@@ -1,11 +1,16 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../context/ShopContextProvider";
+import { motion } from "framer-motion";
 
 const CartItem = ({ name, price, img, id }) => {
   const { cartItems, addToCart, removeFromCart, removeItem } = useContext(ShopContext);
   return (
     <>
-      <div className="text-black flex items-center font-bold">
+      <motion.div
+        initial={{ x: -80, y: -80, opacity: 0 }}
+        animate={{ x: 0, y: 0, opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="text-black flex items-center font-bold">
         <img src={img} alt="image" />
         <div className="flex ml-2">
           <p>
@@ -13,7 +18,7 @@ const CartItem = ({ name, price, img, id }) => {
           </p>
           <p className="ml-5">${price}</p>
         </div>
-      </div>
+      </motion.div>
       <div className="flex gap-1 items-center justify-center">
         <button
           onClick={() => addToCart(id)}
