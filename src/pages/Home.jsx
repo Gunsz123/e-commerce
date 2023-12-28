@@ -10,7 +10,7 @@ const Home = () => {
     <div className="px-[800px] py-[200px] text-center">
       <button
         onClick={handleClick}
-        className="bg-amber-400 rounded-full px-[90px] py-[20px] hover:bg-amber-500 active:bg-amber-300 shadow-lg font-bold text-3xl">
+        className="rounded-full px-[90px] py-[20px] active:bg-amber-300 shadow-2xl font-bold text-3xl bg-black text-white hover:bg-amber-400 hover:text-black transition-transform duration-100 hover:scale-[0.9]">
         SHOP NOW
       </button>
     </div>
