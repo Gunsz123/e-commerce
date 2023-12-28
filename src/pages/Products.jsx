@@ -4,7 +4,7 @@ import data from "../data";
 
 const Products = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 md:grid-cols-2 md:mr-[20%]">
+    <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 md:grid-cols-2 md:mr-[20%] lg:grid-cols-3">
       {data.map((product) => (
         <ProductCard
           key={product.id}

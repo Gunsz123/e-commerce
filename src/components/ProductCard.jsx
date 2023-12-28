@@ -10,7 +10,7 @@ const ProductCard = ({ name, price, img, id }) => {
       initial={{ opacity: 0, x: -60, y: -60 }}
       animate={{ opacity: 1, x: 0, y: 0 }}
       className="text-center">
-      <div className="text-black border-solid border-amber-400 rounded-xl bg-amber-300 font-bold border-2 p-4 max-h-[400px] max-w-[295px] mb-10  ml-[190px] mt-8 shadow-2xl">
+      <div className="text-black border-solid border-amber-400 rounded-xl bg-amber-300 font-bold border-2 p-4 max-h-[400px] max-w-[295px] mb-10  ml-[190px] mt-8 shadow-2xl hover:scale-105">
         <img src={img} alt="shoe" className="object-contain" />
         <p className="mb-3 tracking-tighter">{name}</p>
         <h1 className="mb-3">${price}</h1>
