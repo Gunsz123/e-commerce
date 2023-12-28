@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import data from "../data";
 import { ShopContext } from "../context/ShopContextProvider";
-import CartItem from "../pages/cartItem";
+import CartItem from "../pages/CartItem";
 import { useNavigate } from "react-router-dom";
 
 const CartCard = () => {
